@@ -1,10 +1,9 @@
 [
   {
-
     "id": 1,
     "title": "DSLR Camera",
     "description": "High-quality DSLR camera perfect for professional photography and videography.",
-    "currentBidPrice": 350.0,
+    "currentBidPrice": 3580,
     "timeLeft": "3h 20m",
     "bidsCount": 18,
     "image": "https://i.ibb.co.com/KxrPpzHJ/Bid1-min.png"
@@ -13,7 +12,7 @@
     "id": 2,
     "title": "Electric Guitar",
     "description": "Sleek electric guitar with a classic design and smooth sound, ideal for rock lovers.",
-    "currentBidPrice": 220.0,
+    "currentBidPrice": 2020,
     "timeLeft": "5h 10m",
     "bidsCount": 11,
     "image": "https://i.ibb.co.com/mV6K6txX/Bid2-min.png"
@@ -22,7 +21,7 @@
     "id": 3,
     "title": "Laptop Setup",
     "description": "Modern laptop with dual monitor setup, great for productivity and remote work.",
-    "currentBidPrice": 640.0,
+    "currentBidPrice": 6420,
     "timeLeft": "6h 45m",
     "bidsCount": 25,
     "image": "https://i.ibb.co.com/nMpMTjzV/Bid3-min.png"
@@ -31,7 +30,7 @@
     "id": 4,
     "title": "Luxury Wrist Watch",
     "description": "Stylish stainless steel wrist watch with chronograph features and water resistance.",
-    "currentBidPrice": 280.0,
+    "currentBidPrice": 2860,
     "timeLeft": "1h 30m",
     "bidsCount": 9,
     "image": "https://i.ibb.co.com/QLTN46x/Bid4-min.png"
@@ -40,7 +39,7 @@
     "id": 5,
     "title": "Wooden Garden Chair",
     "description": "Sturdy and eco-friendly chair made from solid wood, perfect for outdoor lounging.",
-    "currentBidPrice": 95.0,
+    "currentBidPrice": 2350,
     "timeLeft": "2h 15m",
     "bidsCount": 6,
     "image": "https://i.ibb.co.com/Qv6JDBpS/Bid5-min.png"
@@ -49,7 +48,7 @@
     "id": 6,
     "title": "E-Book Reader",
     "description": "Compact and lightweight e-reader with high-contrast display for comfortable reading.",
-    "currentBidPrice": 130.0,
+    "currentBidPrice": 2309,
     "timeLeft": "4h 50m",
     "bidsCount": 14,
     "image": "https://i.ibb.co.com/pBr1rC69/Bid6-min.png"
