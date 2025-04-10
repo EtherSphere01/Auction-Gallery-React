@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm flex justify-between container mx-auto">
+      <div className="navbar bg-base-100 shadow-sm flex justify-between  md:pl-20 md:pr-20">
         <div className=" ">
           <a className="btn btn-ghost text-xl">
             <span className="text-[#003EA4]">Auction</span>
