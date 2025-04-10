@@ -1,12 +1,13 @@
 [
   {
+
     "id": 1,
     "title": "DSLR Camera",
     "description": "High-quality DSLR camera perfect for professional photography and videography.",
     "currentBidPrice": 350.0,
     "timeLeft": "3h 20m",
     "bidsCount": 18,
-    "image": "https://ibb.co.com/4RVqngxH"
+    "image": "https://i.ibb.co.com/KxrPpzHJ/Bid1-min.png"
   },
   {
     "id": 2,
@@ -15,7 +16,7 @@
     "currentBidPrice": 220.0,
     "timeLeft": "5h 10m",
     "bidsCount": 11,
-    "image": "https://ibb.co.com/MxMHMpXG"
+    "image": "https://i.ibb.co.com/mV6K6txX/Bid2-min.png"
   },
   {
     "id": 3,
@@ -24,7 +25,7 @@
     "currentBidPrice": 640.0,
     "timeLeft": "6h 45m",
     "bidsCount": 25,
-    "image": "https://ibb.co.com/B2k2mBq7"
+    "image": "https://i.ibb.co.com/nMpMTjzV/Bid3-min.png"
   },
   {
     "id": 4,
@@ -33,7 +34,7 @@
     "currentBidPrice": 280.0,
     "timeLeft": "1h 30m",
     "bidsCount": 9,
-    "image": "https://ibb.co.com/T678sHN"
+    "image": "https://i.ibb.co.com/QLTN46x/Bid4-min.png"
   },
   {
     "id": 5,
@@ -42,7 +43,7 @@
     "currentBidPrice": 95.0,
     "timeLeft": "2h 15m",
     "bidsCount": 6,
-    "image": "https://ibb.co.com/23jFZ2WV"
+    "image": "https://i.ibb.co.com/Qv6JDBpS/Bid5-min.png"
   },
   {
     "id": 6,
@@ -51,6 +52,6 @@
     "currentBidPrice": 130.0,
     "timeLeft": "4h 50m",
     "bidsCount": 14,
-    "image": "https://ibb.co.com/FLqhqGkj"
+    "image": "https://i.ibb.co.com/pBr1rC69/Bid6-min.png"
   }
 ]
