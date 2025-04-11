@@ -4,6 +4,7 @@ import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import Items from "./Items/Items";
 import Favorite from "./Favorite/Favorite";
+import Footer from "./Footer/Footer";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -43,7 +44,7 @@ function App() {
       </div>
 
       <div className="bg-[#EBF0F5]">
-        <div className="container mx-auto flex gap-6 ">
+        <div className="container mx-auto flex gap-6 pb-20 ">
           {/* items section */}
           <div>
             <Items
@@ -61,6 +62,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer></Footer>
     </>
   );
 }
