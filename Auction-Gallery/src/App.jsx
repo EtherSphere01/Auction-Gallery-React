@@ -5,6 +5,7 @@ import Hero from "./Hero/Hero";
 import Items from "./Items/Items";
 import Favorite from "./Favorite/Favorite";
 import Footer from "./Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -16,15 +17,19 @@ function App() {
   }, []);
 
   const [data, setData] = useState(null);
+  const [cancel, setCancel] = useState(null);
 
   const handleBidNow = (bidItem) => {
     setData(bidItem);
+    // console.log(bidItem);
+    setCancel(null);
+    toast.success("Bid placed successfully!");
   };
-
-  const [cancel, setCancel] = useState(0);
   const handleCancelChange = (item) => {
     // console.log(item);
     setCancel(item.id);
+    setData(null);
+    toast.error("Bid cancelled successfully!");
   };
 
   return (
@@ -64,6 +69,19 @@ function App() {
       </div>
 
       <Footer></Footer>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }

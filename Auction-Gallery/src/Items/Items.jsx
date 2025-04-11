@@ -4,14 +4,17 @@ import { GoHeartFill } from "react-icons/go";
 
 const Items = ({ handleBidNow, items, cancel }) => {
   const [favorite, setFavorite] = useState({});
+
   const handleBidIcon = (item) => {
-    setFavorite((prev) => ({ ...prev, [item.id]: true }));
     handleBidNow(item);
+    if (favorite[item.id]) return; // Prevent double-click
+    setFavorite((prev) => ({ ...prev, [item.id]: true }));
   };
 
   useEffect(() => {
-    console.log("cancel", cancel);
-    setFavorite((prev) => ({ ...prev, [cancel]: false }));
+    if (cancel !== null) {
+      setFavorite((prev) => ({ ...prev, [cancel]: false }));
+    }
   }, [cancel]);
 
   return (

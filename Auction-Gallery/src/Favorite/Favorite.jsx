@@ -8,16 +8,17 @@ const Favorite = ({ data, handleCancelChange }) => {
 
   useEffect(() => {
     if (data) {
-      const newBidItems = [...bidItems, data];
-      setBidItems(newBidItems);
-      const newTotal = total + data.currentBidPrice;
-      setTotal(newTotal);
+      const newData = bidItems.filter((item) => item.id !== data.id);
+      setBidItems([...newData, data]);
+      setTotal((prevTotal) => prevTotal + data.currentBidPrice);
     }
+    // console.log(data);
   }, [data]);
 
   const handleCancel = (item) => {
     const newBidItems = bidItems.filter((bidItem) => bidItem.id !== item.id);
     setBidItems(newBidItems);
+    // console.log(newBidItems);
     const newTotal = total - item.currentBidPrice;
     setTotal(newTotal);
     handleCancelChange(item);
