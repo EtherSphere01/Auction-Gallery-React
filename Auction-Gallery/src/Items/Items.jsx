@@ -2,26 +2,21 @@ import React, { use, useEffect, useState } from "react";
 import { GoHeart } from "react-icons/go";
 import { GoHeartFill } from "react-icons/go";
 
-const Items = ({ handleBidNow }) => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    const data = "resources.json";
-    fetch(data)
-      .then((res) => res.json())
-      .then((data) => setItems(data));
-  }, []);
-  // console.log(items);
-
+const Items = ({ handleBidNow, items, cancel }) => {
   const [favorite, setFavorite] = useState({});
   const handleBidIcon = (item) => {
-    handleBidNow(item);
     setFavorite((prev) => ({ ...prev, [item.id]: true }));
+    handleBidNow(item);
   };
+
+  useEffect(() => {
+    console.log("cancel", cancel);
+    setFavorite((prev) => ({ ...prev, [cancel]: false }));
+  }, [cancel]);
 
   return (
     <div className="bg-[#EBF0F5]">
-      <div className="container mx-auto">
+      <div className="">
         <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
           <table className="table">
             {/* head */}
