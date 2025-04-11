@@ -2,7 +2,7 @@ import React, { use, useEffect, useState } from "react";
 import { GoHeart } from "react-icons/go";
 import { GoHeartFill } from "react-icons/go";
 
-const Items = () => {
+const Items = ({ handleBidNow }) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -11,13 +11,17 @@ const Items = () => {
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
-  console.log(items);
+  // console.log(items);
+
+  const [favorite, setFavorite] = useState({});
+  const handleBidIcon = (item) => {
+    handleBidNow(item);
+    setFavorite((prev) => ({ ...prev, [item.id]: true }));
+  };
+
   return (
     <div className="bg-[#EBF0F5]">
-      <div className="container mx-auto pt-20">
-        <h1 className="text-2xl font-bold text-[#0E2954]">Activate Auctions</h1>
-        <p className="pb-7">Discover and bid on extraordinary items</p>
-
+      <div className="container mx-auto">
         <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
           <table className="table">
             {/* head */}
@@ -41,8 +45,17 @@ const Items = () => {
                   <td>$ {item.currentBidPrice}</td>
                   <td>{item.timeLeft}</td>
                   <td>
-                    <GoHeart className="text-2xl text-[#0E2954]"></GoHeart>
-                    <GoHeartFill className="text-2xl text-red-600 hidden"></GoHeartFill>
+                    <button
+                      className={`hover:cursor-pointer disabled:cursor-not-allowed`}
+                      onClick={() => handleBidIcon(item)}
+                      disabled={favorite[item.id]}
+                    >
+                      {favorite[item.id] ? (
+                        <GoHeartFill className="text-2xl text-red-600" />
+                      ) : (
+                        <GoHeart className="text-2xl text-[#0E2954]" />
+                      )}
+                    </button>
                   </td>
                 </tr>
               ))}
